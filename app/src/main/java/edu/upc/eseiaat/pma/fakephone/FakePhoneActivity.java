@@ -35,4 +35,11 @@ public class FakePhoneActivity extends AppCompatActivity {
         phonenumber.setText(act_number);
     }
 
+    public void Call(View v){
+        Button call = (Button) v;
+        String calling = "Calling " + act_number;
+        Toast.makeText(this, calling, Toast.LENGTH_SHORT).show();
+        act_number = "";
+        phonenumber.setText(act_number);
+    }
 }
